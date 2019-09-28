@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+            <script>
+                $(function () {
+                    var $btn = $("button")[0];
+                    $btn.onclick = function () {
+                        var $input = $("input")[0];
+                        var text = $input.value;
+                        $("img").attr("src","https://img30.360buyimg.com/pop/s590x470_jfs/t1/48164/4/11012/40706/5d7f5c01Eb905a481/55945b688822eeaa.jpg.webp")
+                    }
+                });
+            </script>
+</head>
+<body>
+<input type="text">
+<button>切换图片</button><br>
+<img src="https://www.baidu.com/img/xinshouyedong_4f93b2577f07c164ae8efa0412dd6808.gif">
+</body>
+</html>
