@@ -8,7 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="jquery学习" />
     <orderEntry type="module" module-name="JqueryStudy" />
+    <orderEntry type="module" module-name="myBlog" />
   </component>
 </module>

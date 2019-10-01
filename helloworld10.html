@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置css样式的方法</title>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+            <script>
+                $(function () {
+                    $("div").css("width", "100px");
+                    $("div").css("height", "100px");
+                    $("div").css("background", "red");
+
+                    $("div").css("width", "100px").css("height", "100px").css("background", "red");
+                });
+                $("div").css({
+                    width:"100px",
+                    height: "100px",
+                    background: "red"
+                })
+            </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

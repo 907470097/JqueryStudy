@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Web-Project/JqueryStudy/.idea/JqueryStudy.iml" filepath="$PROJECT_DIR$/../Web-Project/JqueryStudy/.idea/JqueryStudy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Web-Project/jquery学习/.idea/jquery学习.iml" filepath="$PROJECT_DIR$/../Web-Project/jquery学习/.idea/jquery学习.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/js.iml" filepath="$PROJECT_DIR$/.idea/js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myBlog/.idea/myBlog.iml" filepath="$PROJECT_DIR$/../myBlog/.idea/myBlog.iml" />
     </modules>
   </component>
 </project>
