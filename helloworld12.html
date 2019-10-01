@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定学习</title>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+            <script>
+                $(function () {
+                    $("button").on("click", function () {
+                        alert("hello world");
+                    });
+                    $("button").on("click", function () {
+                        alert("hello world");
+                    });
+                    $("button").on("mouseleave", function () {
+                        alert("hello world");
+                    });
+                    $("button").on("mouseenter", function () {
+                        alert("hello world");
+                    });
+                });
+            </script>
+</head>
+<body>
+<button>获取</button>
+</body>
+</html>

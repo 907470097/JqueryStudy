@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡与默认行为</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .father{
+            width:200px;
+            height:200px;
+            background: red;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background: saddlebrown;
+        }
+    </style>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+            <script>
+                $(function () {
+                     /*$(".son").click(function (event) {
+                         alert("son");
+                         //return false;
+                         //event.stopPropagation();
+                     });
+                         $(".father").click(function () {
+                             alert("father");
+                      });*/
+                    $("a").click(function (event) {
+                        alert("弹出注册按钮")
+                        //return false;
+                        event.preventDefault();
+                    });
+                });
+            </script>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+<a href="http://www.baidu.com">我是百度</a>
+<form action="http://www.taovao.com">
+    <input type="text">
+    <input type="submit">
+</form>
+</body>
+</html>

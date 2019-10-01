@@ -28,6 +28,12 @@
             top:50px;
 
         }
+        .scroll{
+            width:100px;
+            height: 200px;
+            border:1px solid #000000;
+            overflow:auto;
+        }
     </style>
         <script src="node_modules/jquery/dist/jquery.js"></script>
             <script>
@@ -40,6 +46,14 @@
                             $(".father").width("500px");
                             console.log($(".son").offset().left);
                         }
+                        $btns[2].onclick = function () {
+                            console.log($("html").scrollTop());
+
+                        }
+                        $btns[3].onclick = function () {
+                            $("html").scrollTop(300);
+
+                        }
 
                 });
             </script>
@@ -47,7 +61,17 @@
 <body>
 <button>获取</button>
 <button>位置</button>
+<button>获取2</button>
+<button>获取3</button>
 <div class="father"></div>
 <div class="son"></div>
+<div class="scroll">我是div我是div我是d
+    iv我是div我是div我是div我是div我是div我是div
+    我是div我是div我是div我是div我是div我是div我
+    是div我是div我是div我是div我是div我是div我是d
+    iv我是div我是div我是div我是div我是div我是div我是
+    div我是div我是div我是div我是div我是div我是div我是d
+    iv我是div我是div我是div我是div我是div我是div我是
+    div我是div我是div</div>
 </body>
 </html>

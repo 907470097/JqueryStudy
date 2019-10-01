@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件自动触发</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .father{
+            width:200px;
+            height:200px;
+            background: red;
+        }
+        .son{
+            width: 100px;
+            height: 100px;
+            background: saddlebrown;
+        }
+    </style>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+            <script>
+                $(function () {
+                /*$(".father").click(function () {
+                    alert("father");
+
+                })
+                    $(".father").trigger("click");*/
+                $("input[type='submit']").click(function () {
+                    alert("sybmit");
+
+                });
+                    $("input[type='submit']").triggerHandler("click");
+
+
+                });
+            </script>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+<a href="http://www.baidu.com">我是百度</a>
+<form action="https://www.taobao.com/">
+    <input type="text">
+    <input type="submit">
+</form>
+</body>
+</html>
